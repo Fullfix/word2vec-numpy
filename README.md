@@ -30,6 +30,16 @@ The following table compares **wikitext-256** model against standard pre-trained
 
 My model has competitive WordSim-353, SimLex-999 and MEN scores. Google Analogies accuracy is relatively low, likely due to short training duration.
 
+### Nearest Neighbors Sanity Check
+
+| Query Word | Top-5 Nearest Neighbors (Cosine Similarity) |
+|:---|:---|
+| **man** | woman (0.449), whom (0.350), soldier (0.339), bearded (0.331), manicured (0.325) |
+| **physics** | physicists (0.479), mathematics (0.462), mesons (0.460), caltech (0.447), neutrino (0.445) |
+| **boy** | blob (0.429), girl (0.420), kid (0.364), teenaged (0.363), young (0.362) |
+| **london** | southwark (0.536), lambeth (0.490), piccadilly (0.468), islington (0.456), whitechapel (0.444) |
+| **january** | december (0.776), february (0.740), march (0.733), april (0.714), july (0.682) |
+| **computer** | computers (0.592), mainframe (0.464), software (0.462), computing (0.455), desktop (0.453) |
 
 ## Usage
 
