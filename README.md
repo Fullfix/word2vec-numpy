@@ -17,16 +17,16 @@ Evaluation consists of:
 
 The following table compares **wikitext-256** model against standard pre-trained GloVe embeddings, original Word2Vec model and FastText. For WordSim-353, SimLex-999, and MEN, I report the Spearman correlation coefficient (with coverage in parentheses). For Google Analogies, I report Top-1 accuracy.
 
-| Model | WordSim-353 | SimLex-999 | MEN Similarity (3k) | Google Analogies |
-| :--- | :--- | :--- | :--- | :--- |
-| glove-twitter-100 | 0.482 (94.6%) | 0.120 (99.9%) | 0.573 (100.0%) | 0.442 (95.7%) |
-| glove-twitter-200 | 0.491 (94.6%) | 0.128 (99.9%) | 0.589 (100.0%) | 0.549 (95.7%) |
-| glove-wiki-gigaword-100 | 0.487 (94.9%) | 0.298 (100.0%) | 0.693 (100.0%) | 0.631 (100.0%) |
-| glove-wiki-gigaword-200 | 0.523 (94.9%) | 0.340 (100.0%) | 0.724 (100.0%) | 0.698 (100.0%) |
-| glove-wiki-gigaword-300 | 0.550 (94.9%) | 0.371 (100.0%) | 0.749 (100.0%) | 0.717 (100.0%) |
-| word2vec-google-news-300 | 0.688 (100.0%) | **0.442** (100.0%) | 0.782 (98.2%) | 0.736 (100.0%) |
-| fasttext-wiki-news-300 | **0.718** (100.0%) | 0.441 (100.0%) | **0.803** (100.0%) | **0.873** (100.0%) |
-| **wikitext-256 (mine)** | 0.678 (94.9%) | 0.361 (99.6%) | 0.724 (100.0%) | 0.361 (91.9%) |
+| Model | WordSim-353      | SimLex-999       | MEN Similarity (3k) | Google Analogies |
+| :--- |:-----------------|:-----------------|:--------------------|:-----------------|
+| glove-twitter-100 | 0.482 (94.6%)    | 0.120 (99.9%)    | 0.573 (100%)        | 0.442 (95.7%)    |
+| glove-twitter-200 | 0.491 (94.6%)    | 0.128 (99.9%)    | 0.589 (100%)        | 0.549 (95.7%)    |
+| glove-wiki-gigaword-100 | 0.487 (94.9%)    | 0.298 (100%)     | 0.693 (100%)        | 0.631 (100%)     |
+| glove-wiki-gigaword-200 | 0.523 (94.9%)    | 0.340 (100%)     | 0.724 (100%)        | 0.698 (100%)     |
+| glove-wiki-gigaword-300 | 0.550 (94.9%)    | 0.371 (100%)     | 0.749 (100%)        | 0.717 (100%)     |
+| word2vec-google-news-300 | 0.688 (100%)     | **0.442** (100%) | 0.782 (98.2%)       | 0.736 (100%)     |
+| fasttext-wiki-news-300 | **0.718** (100%) | 0.441 (100%)     | **0.803** (100%)    | **0.873** (100%) |
+| **wikitext-256 (mine)** | 0.678 (94.9%)    | 0.361 (99.6%)    | 0.724 (100%)        | 0.361 (91.9%)    |
 
 My model has competitive WordSim-353, SimLex-999 and MEN scores. Google Analogies accuracy is relatively low, likely due to short training duration.
 
